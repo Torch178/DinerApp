@@ -76,6 +76,9 @@ namespace DinerApp
                 case "Juice":
                     DrinkPrice = 1.75M;
                     break;
+                default:
+                    DrinkPrice = 0M;
+                    break;
             }
         }
 

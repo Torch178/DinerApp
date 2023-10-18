@@ -57,10 +57,12 @@
             // 
             // menuStrip
             // 
+            menuStrip.ImageScalingSize = new Size(20, 20);
             menuStrip.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, editToolStripMenuItem, helpToolStripMenuItem });
             menuStrip.Location = new Point(0, 0);
             menuStrip.Name = "menuStrip";
-            menuStrip.Size = new Size(800, 24);
+            menuStrip.Padding = new Padding(7, 3, 0, 3);
+            menuStrip.Size = new Size(914, 30);
             menuStrip.TabIndex = 0;
             menuStrip.Text = "menuStrip1";
             // 
@@ -68,34 +70,34 @@
             // 
             fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { placeOrderToolStripMenuItem, clearOrderToolStripMenuItem, displayOrderToolStripMenuItem, exitToolStripMenuItem });
             fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            fileToolStripMenuItem.Size = new Size(37, 20);
+            fileToolStripMenuItem.Size = new Size(46, 24);
             fileToolStripMenuItem.Text = "File";
             // 
             // placeOrderToolStripMenuItem
             // 
             placeOrderToolStripMenuItem.Name = "placeOrderToolStripMenuItem";
-            placeOrderToolStripMenuItem.Size = new Size(145, 22);
+            placeOrderToolStripMenuItem.Size = new Size(183, 26);
             placeOrderToolStripMenuItem.Text = "Place Order";
             placeOrderToolStripMenuItem.Click += placeOrderToolStripMenuItem_Click;
             // 
             // clearOrderToolStripMenuItem
             // 
             clearOrderToolStripMenuItem.Name = "clearOrderToolStripMenuItem";
-            clearOrderToolStripMenuItem.Size = new Size(145, 22);
+            clearOrderToolStripMenuItem.Size = new Size(183, 26);
             clearOrderToolStripMenuItem.Text = "Clear Order";
             clearOrderToolStripMenuItem.Click += clearOrderToolStripMenuItem_Click;
             // 
             // displayOrderToolStripMenuItem
             // 
             displayOrderToolStripMenuItem.Name = "displayOrderToolStripMenuItem";
-            displayOrderToolStripMenuItem.Size = new Size(145, 22);
+            displayOrderToolStripMenuItem.Size = new Size(183, 26);
             displayOrderToolStripMenuItem.Text = "Display Order";
             displayOrderToolStripMenuItem.Click += displayOrderToolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(145, 22);
+            exitToolStripMenuItem.Size = new Size(183, 26);
             exitToolStripMenuItem.Text = "Exit";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
@@ -103,27 +105,27 @@
             // 
             editToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { entreeToolStripMenuItem, drinksToolStripMenuItem, specialRequestsToolStripMenuItem });
             editToolStripMenuItem.Name = "editToolStripMenuItem";
-            editToolStripMenuItem.Size = new Size(39, 20);
+            editToolStripMenuItem.Size = new Size(49, 24);
             editToolStripMenuItem.Text = "Edit";
             // 
             // entreeToolStripMenuItem
             // 
             entreeToolStripMenuItem.Name = "entreeToolStripMenuItem";
-            entreeToolStripMenuItem.Size = new Size(161, 22);
+            entreeToolStripMenuItem.Size = new Size(203, 26);
             entreeToolStripMenuItem.Text = "Entree";
             entreeToolStripMenuItem.Click += entreeToolStripMenuItem_Click;
             // 
             // drinksToolStripMenuItem
             // 
             drinksToolStripMenuItem.Name = "drinksToolStripMenuItem";
-            drinksToolStripMenuItem.Size = new Size(161, 22);
+            drinksToolStripMenuItem.Size = new Size(203, 26);
             drinksToolStripMenuItem.Text = "Drinks";
             drinksToolStripMenuItem.Click += drinksToolStripMenuItem_Click;
             // 
             // specialRequestsToolStripMenuItem
             // 
             specialRequestsToolStripMenuItem.Name = "specialRequestsToolStripMenuItem";
-            specialRequestsToolStripMenuItem.Size = new Size(161, 22);
+            specialRequestsToolStripMenuItem.Size = new Size(203, 26);
             specialRequestsToolStripMenuItem.Text = "Special Requests";
             specialRequestsToolStripMenuItem.Click += specialRequestsToolStripMenuItem_Click;
             // 
@@ -131,13 +133,13 @@
             // 
             helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aboutToolStripMenuItem });
             helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            helpToolStripMenuItem.Size = new Size(44, 20);
+            helpToolStripMenuItem.Size = new Size(55, 24);
             helpToolStripMenuItem.Text = "Help";
             // 
             // aboutToolStripMenuItem
             // 
             aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            aboutToolStripMenuItem.Size = new Size(107, 22);
+            aboutToolStripMenuItem.Size = new Size(133, 26);
             aboutToolStripMenuItem.Text = "About";
             aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;
             // 
@@ -145,9 +147,10 @@
             // 
             chBxWater.AutoSize = true;
             chBxWater.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            chBxWater.Location = new Point(78, 346);
+            chBxWater.Location = new Point(89, 461);
+            chBxWater.Margin = new Padding(3, 4, 3, 4);
             chBxWater.Name = "chBxWater";
-            chBxWater.Size = new Size(63, 21);
+            chBxWater.Size = new Size(80, 27);
             chBxWater.TabIndex = 1;
             chBxWater.Text = "Water";
             chBxWater.UseVisualStyleBackColor = true;
@@ -158,9 +161,10 @@
             cmBxSpecialRequests.BackColor = Color.LemonChiffon;
             cmBxSpecialRequests.FormattingEnabled = true;
             cmBxSpecialRequests.Items.AddRange(new object[] { "Whole Wheat", "Pumpernickle", "Seedless Rye", "Sourdough", "Pita" });
-            cmBxSpecialRequests.Location = new Point(77, 282);
+            cmBxSpecialRequests.Location = new Point(88, 376);
+            cmBxSpecialRequests.Margin = new Padding(3, 4, 3, 4);
             cmBxSpecialRequests.Name = "cmBxSpecialRequests";
-            cmBxSpecialRequests.Size = new Size(223, 23);
+            cmBxSpecialRequests.Size = new Size(254, 28);
             cmBxSpecialRequests.TabIndex = 2;
             cmBxSpecialRequests.SelectedIndexChanged += cmBxSpecialRequests_SelectedIndexChanged;
             cmBxSpecialRequests.TextChanged += cmBxSpecialRequests_TextChanged;
@@ -169,10 +173,11 @@
             // 
             lstBxEntreeSelection.BackColor = Color.LemonChiffon;
             lstBxEntreeSelection.FormattingEnabled = true;
-            lstBxEntreeSelection.ItemHeight = 15;
-            lstBxEntreeSelection.Location = new Point(78, 104);
+            lstBxEntreeSelection.ItemHeight = 20;
+            lstBxEntreeSelection.Location = new Point(89, 139);
+            lstBxEntreeSelection.Margin = new Padding(3, 4, 3, 4);
             lstBxEntreeSelection.Name = "lstBxEntreeSelection";
-            lstBxEntreeSelection.Size = new Size(222, 94);
+            lstBxEntreeSelection.Size = new Size(253, 124);
             lstBxEntreeSelection.TabIndex = 3;
             lstBxEntreeSelection.SelectedIndexChanged += lstBxEntreeSelection_SelectedIndexChanged;
             // 
@@ -180,9 +185,9 @@
             // 
             lblEntreeSelection.AutoSize = true;
             lblEntreeSelection.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblEntreeSelection.Location = new Point(78, 67);
+            lblEntreeSelection.Location = new Point(89, 89);
             lblEntreeSelection.Name = "lblEntreeSelection";
-            lblEntreeSelection.Size = new Size(107, 17);
+            lblEntreeSelection.Size = new Size(139, 23);
             lblEntreeSelection.TabIndex = 4;
             lblEntreeSelection.Text = "Entree Selection";
             // 
@@ -190,9 +195,9 @@
             // 
             lblSpecialRequests.AutoSize = true;
             lblSpecialRequests.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblSpecialRequests.Location = new Point(77, 250);
+            lblSpecialRequests.Location = new Point(88, 333);
             lblSpecialRequests.Name = "lblSpecialRequests";
-            lblSpecialRequests.Size = new Size(110, 17);
+            lblSpecialRequests.Size = new Size(143, 23);
             lblSpecialRequests.TabIndex = 5;
             lblSpecialRequests.Text = "Special Requests";
             // 
@@ -200,9 +205,10 @@
             // 
             rbMilk.AutoSize = true;
             rbMilk.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            rbMilk.Location = new Point(373, 134);
+            rbMilk.Location = new Point(426, 179);
+            rbMilk.Margin = new Padding(3, 4, 3, 4);
             rbMilk.Name = "rbMilk";
-            rbMilk.Size = new Size(53, 21);
+            rbMilk.Size = new Size(67, 27);
             rbMilk.TabIndex = 6;
             rbMilk.TabStop = true;
             rbMilk.Text = "Milk";
@@ -213,9 +219,10 @@
             // 
             rbJuice.AutoSize = true;
             rbJuice.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            rbJuice.Location = new Point(373, 180);
+            rbJuice.Location = new Point(426, 240);
+            rbJuice.Margin = new Padding(3, 4, 3, 4);
             rbJuice.Name = "rbJuice";
-            rbJuice.Size = new Size(57, 21);
+            rbJuice.Size = new Size(71, 27);
             rbJuice.TabIndex = 7;
             rbJuice.TabStop = true;
             rbJuice.Text = "Juice";
@@ -226,9 +233,10 @@
             // 
             rbSoda.AutoSize = true;
             rbSoda.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            rbSoda.Location = new Point(373, 226);
+            rbSoda.Location = new Point(426, 301);
+            rbSoda.Margin = new Padding(3, 4, 3, 4);
             rbSoda.Name = "rbSoda";
-            rbSoda.Size = new Size(56, 21);
+            rbSoda.Size = new Size(71, 27);
             rbSoda.TabIndex = 8;
             rbSoda.TabStop = true;
             rbSoda.Text = "Soda";
@@ -239,9 +247,10 @@
             // 
             rbLemonade.AutoSize = true;
             rbLemonade.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            rbLemonade.Location = new Point(373, 272);
+            rbLemonade.Location = new Point(426, 363);
+            rbLemonade.Margin = new Padding(3, 4, 3, 4);
             rbLemonade.Name = "rbLemonade";
-            rbLemonade.Size = new Size(90, 21);
+            rbLemonade.Size = new Size(114, 27);
             rbLemonade.TabIndex = 9;
             rbLemonade.TabStop = true;
             rbLemonade.Text = "Lemonade";
@@ -252,9 +261,10 @@
             // 
             rbTea.AutoSize = true;
             rbTea.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            rbTea.Location = new Point(373, 318);
+            rbTea.Location = new Point(426, 424);
+            rbTea.Margin = new Padding(3, 4, 3, 4);
             rbTea.Name = "rbTea";
-            rbTea.Size = new Size(47, 21);
+            rbTea.Size = new Size(57, 27);
             rbTea.TabIndex = 10;
             rbTea.TabStop = true;
             rbTea.Text = "Tea";
@@ -265,9 +275,10 @@
             // 
             rbCoffee.AutoSize = true;
             rbCoffee.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            rbCoffee.Location = new Point(373, 364);
+            rbCoffee.Location = new Point(426, 485);
+            rbCoffee.Margin = new Padding(3, 4, 3, 4);
             rbCoffee.Name = "rbCoffee";
-            rbCoffee.Size = new Size(66, 21);
+            rbCoffee.Size = new Size(84, 27);
             rbCoffee.TabIndex = 11;
             rbCoffee.TabStop = true;
             rbCoffee.Text = "Coffee";
@@ -277,19 +288,21 @@
             // grBxDrinkSelection
             // 
             grBxDrinkSelection.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            grBxDrinkSelection.Location = new Point(353, 67);
+            grBxDrinkSelection.Location = new Point(403, 89);
+            grBxDrinkSelection.Margin = new Padding(3, 4, 3, 4);
             grBxDrinkSelection.Name = "grBxDrinkSelection";
-            grBxDrinkSelection.Size = new Size(177, 347);
+            grBxDrinkSelection.Padding = new Padding(3, 4, 3, 4);
+            grBxDrinkSelection.Size = new Size(202, 463);
             grBxDrinkSelection.TabIndex = 12;
             grBxDrinkSelection.TabStop = false;
             grBxDrinkSelection.Text = "Drink Selection";
             // 
             // OrderGUI
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Goldenrod;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(rbCoffee);
             Controls.Add(rbTea);
             Controls.Add(rbLemonade);
@@ -304,8 +317,10 @@
             Controls.Add(menuStrip);
             Controls.Add(grBxDrinkSelection);
             MainMenuStrip = menuStrip;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "OrderGUI";
             Text = "Student Union - Diner by the Valley";
+            Load += OrderGUI_Load;
             menuStrip.ResumeLayout(false);
             menuStrip.PerformLayout();
             ResumeLayout(false);
